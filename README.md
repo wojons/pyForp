@@ -16,11 +16,11 @@ def fib(n):
         return n
     return fib(n-2) + fib(n-1)
 
-forp = pyForp.pyForp()
-forp.start()
-print fib(2)
-forp.stop()
-print forp.dump()
+forp = pyForp.pyForp() #start the class
+forp.start() #start the profiler
+print fib(2) #do some magic
+forp.stop() #stop the profiler
+print forp.dump() #dump the results
 ```
 Result :
 ```

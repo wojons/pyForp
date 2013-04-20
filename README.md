@@ -5,6 +5,11 @@ Python implentation of forp written for PHP
 The orginal PHP project can be found here https://github.com/aterrien/forp
 The output of this one should match the orginal project, I wrote it in a few hours and have not had enough time to test it the UI yet
 
+Why
+===
+
+You must be woundering why someone would spend there time writing this when they could use the built-in python profiler and traces. The simple answer is they did not meet my needs. I really wanted to see each functions time seperate from the other other times it was called. Wanted to see what was getting passed into the function, wanted a trace that allowed me to see things like nesting. Lastly also wanted some clue on the memory usage, even though its not perfect its better than nothing.
+
 How-To
 ======
 Python :
@@ -77,3 +82,8 @@ Result :
     'stime': 0.0,
     'utime': 0.0040000000000000036}
 ```
+
+Issues & Requests
+=================
+
+Considering I made the bulk of this in a few hours one night, It is no where near compleate please feel free to leave submit any issues you see to the issue tracker for this project. If your woundering why its not written in C knowing it could be much faster the simple answer is, Its mostly a proffe of concept if i get it to do everything it needs to do then I will consider writing it in C. If you think its amazing and want to do it your self its all yours. 

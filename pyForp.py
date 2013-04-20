@@ -6,10 +6,7 @@ import resource
 
 class pyForp:
 	def __init__(self):
-		self.stack = dict() #things that have started and finished
-		self.calls = list() #things that have only been called
-		self.glob = dict()	#store some globals here
-		self.callNum = 0
+		self.stack, self.calls, self.glob, self.callNum = dict(), list(), dict(), 0 #set some defaults
 		
 	def start(self): #start all the things needed for tracing
 		self.rusage = resource.getrusage(resource.RUSAGE_SELF) #get a snapshot of current usage so we can use that later
